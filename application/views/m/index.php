@@ -52,7 +52,7 @@
 <small class="info">长按上图保存到手机相册</small>
 
 <div class="content-box">
-    <textarea id="content" placeholder="属于自己的鸡汤"></textarea>
+    <textarea id="content" placeholder="属于自己的鸡汤" maxlength="200"></textarea>
 </div>
 
 <div class="footer-group">
