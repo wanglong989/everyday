@@ -50,6 +50,14 @@ class H5Main extends CI_Controller
             'updated_at' => $nowTime,
         );
 
+        if (empty($content)) {
+            exitJson(false, array('msg' => '必须选内容不能为空'));
+        }
+
+        if (empty($pic)) {
+            exitJson(false, array('msg' => '图片不能为空'));
+        }
+
         $result = $this->H5Model->addEvery($data);
 
         if ($result) {
